@@ -7,7 +7,7 @@
 #### Course Intro
 #### JavaScript Language Basics
 * [Coding Challenge 1](https://github.com/romeojeremiah/Complete_Javascript_Course_Schmedtmann/blob/master/codingChallenge1.js)
-* Coding Challenge 2
+* [Coding Challenge 2](https://github.com/romeojeremiah/Complete_Javascript_Course_Schmedtmann/blob/master/codingChallenge2.js)
 * Coding Challenge 3
 * Coding Challenge 4
 * Coding Challenge 5
