@@ -10,7 +10,7 @@
 * Coding Challenge 2 - [My Solution](https://github.com/romeojeremiah/Complete_Javascript_Course_Schmedtmann/blob/master/codingChallenge2.js)
 * Coding Challenge 3 - [My Solution](https://github.com/romeojeremiah/Complete_Javascript_Course_Schmedtmann/blob/master/codingChallenge3.js)
 * Coding Challenge 4 - [My Solution](https://github.com/romeojeremiah/Complete_Javascript_Course_Schmedtmann/blob/master/codingChallenge4.js)
-* Coding Challenge 5
+* Coding Challenge 5 - [My Solution](https://github.com/romeojeremiah/Complete_Javascript_Course_Schmedtmann/blob/master/codingChallenge5.js)
 #### How JavaScript Works Behind the Scenes
 #### JavaScript in the Browser: DOM Manipulation and Events
 * Coding Challenge 6
