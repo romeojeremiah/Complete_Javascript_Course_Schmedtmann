@@ -6,10 +6,10 @@
 
 #### Course Intro
 #### JavaScript Language Basics
-* [My Coding Challenge 1 Solution](https://github.com/romeojeremiah/Complete_Javascript_Course_Schmedtmann/blob/master/codingChallenge1.js)
-* [My Coding Challenge 2 Solution](https://github.com/romeojeremiah/Complete_Javascript_Course_Schmedtmann/blob/master/codingChallenge2.js)
-* [My Coding Challenge 3 Solution](https://github.com/romeojeremiah/Complete_Javascript_Course_Schmedtmann/blob/master/codingChallenge3.js)
-* Coding Challenge 4
+* Coding Challenge 1 - [My Solution](https://github.com/romeojeremiah/Complete_Javascript_Course_Schmedtmann/blob/master/codingChallenge1.js)
+* Coding Challenge 2 - [My Solution](https://github.com/romeojeremiah/Complete_Javascript_Course_Schmedtmann/blob/master/codingChallenge2.js)
+* Coding Challenge 3 - [My Solution](https://github.com/romeojeremiah/Complete_Javascript_Course_Schmedtmann/blob/master/codingChallenge3.js)
+* Coding Challenge 4 - [My Solution](https://github.com/romeojeremiah/Complete_Javascript_Course_Schmedtmann/blob/master/codingChallenge4.js)
 * Coding Challenge 5
 #### How JavaScript Works Behind the Scenes
 #### JavaScript in the Browser: DOM Manipulation and Events
