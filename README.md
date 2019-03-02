@@ -13,6 +13,7 @@
 * Coding Challenge 5 - [My Solution](https://github.com/romeojeremiah/Complete_Javascript_Course_Schmedtmann/blob/master/codingChallenge5.js)
 #### How JavaScript Works Behind the Scenes
 * How our code is executed
+
  1. Host enviornment (Browser JS Engine/Node) takes our code and execute it.
  2. Code is parsed by a Parser to check for correct syntax
  3. If all is correct, code is converted to machine code
@@ -73,6 +74,54 @@ var age = 23;
 
 console.log(age) // 23 // age assigned the value 23 in above line
 ```
+
+* Scoping and the Scope Chain
+
+Big Picture: Scoping asnswers the question 'where can we access a certain variable?'
+
+* Each new function creates a scope
+* Lexical scoping is a fuction within another function
+* Scope chain goes up from locally scoped functions to the global scope, not in the reverse
+
+```javascript
+var a = 'Hello!';
+first();
+
+function first() {
+ var b = 'Hi!';
+ second();
+ 
+ function second() {
+  var c = 'Hey!';
+  console.log(a + b + c);
+  }
+}
+// output: Hello!Hi!Hey!
+```
+In above code, function second() has access to variables in function second(), function first(), and the global scope
+
+Execution Stack is different than Scope Chain
+```javascript
+var a = 'Hello!';
+first();
+
+function first() {
+ var b = 'Hi!';
+ second();
+ 
+ function second() {
+  var c = 'Hey!';
+  third()
+  }
+}
+
+function third( {
+  var d = 'John'
+  console.log(a + b + c + d);
+ }
+```
+Above output will result in **uncaught reference** b is not defined because third() does not have access to the var b. 
+third() only has access to var a (in the global scope) and var d. var b is locally scoped to first(). 
 
 #### JavaScript in the Browser: DOM Manipulation and Events
 * Coding Challenge 6
