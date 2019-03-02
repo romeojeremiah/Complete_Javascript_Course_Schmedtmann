@@ -36,49 +36,47 @@
   ```
 * Events and Event Handling
   
-Events are notifications that are sent to notify when something happens in the browswer. Event listeners are functions that perform an action based on the event. Events are only processed after the execution stack is empty. Events are held in message queues.
+  Events are notifications that are sent to notify when something happens in the browswer. Event listeners are functions that perform an   action based on the event. Events are only processed after the execution stack is empty. Events are held in message queues.
   
-    * How to set up an event handler
-```javascript
-document.querySelector('.btn-roll').addEventListener('event type', callback function)
+  * How to set up an event handler
+  ```javascript
+  document.querySelector('.btn-roll').addEventListener('event type', callback function)
 
-document.querySelector('.btn-roll').addEventListener('event', function) 
-//function does not need to be called with () because we want the event to invoke the function
-//if we used (), the function would automatically run
-//to make the event invoke the function, just provide the function's name
-```
-Types of events: [MDN event reference](https://developer.mozilla.org/en-US/docs/Web/Events)
+  document.querySelector('.btn-roll').addEventListener('event', function) 
+  //function does not need to be called with () because we want the event to invoke the function
+  //if we used (), the function would automatically run
+  //to make the event invoke the function, just provide the function's name
+  ```
+  Types of events: [MDN event reference](https://developer.mozilla.org/en-US/docs/Web/Events)
 
-    * What is a callback function
- A function that is passed into another fuction as an argument
+  * What is a callback function
+  A function that is passed into another fuction as an argument
 
-    * What is an anonymous function
-A function that does not have a name
-```
-function (name) {
-//do something
-} //not anonymous
-function(){
-//do something
-} //anonymous
-```
-```javascript
-document.querySelector('.btn-roll').addEventListener('click', function() {
+  * What is an anonymous function
+  A function that does not have a name
+  ```
+  function (name) {
   //do something
-});
-```
-    * Another way to select elements by ID
-```
-document.getElementyByID('element').textContent
-//this selector does not require the # like query selector does. 
-//It just requires the string name of the element
-```
+  } //not anonymous
+  function(){
+  //do something
+  } //anonymous
+  
+  document.querySelector('.btn-roll').addEventListener('click', function() {
+  //do something
+  });
+  ```
+  * Another way to select elements by ID
+  ```
+  document.getElementyByID('element').textContent
+  //this selector does not require the # like query selector does. 
+  //It just requires the string name of the element
+  ```
+   * How to change the image in an <img> element 
+  ```
+  //2 different ways 
+  document.querySelector('.element').src = '/dice.png'
 
-    * How to change the image in an <img> element 
-2 different ways 
-```
-document.querySelector('.element').src = '/dice.png'
-
-document.querySelector('.element').setAttribute('src', '/dice.png');
-```
+  document.querySelector('.element').setAttribute('src', '/dice.png');
+  ```
   
