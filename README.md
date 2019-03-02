@@ -12,11 +12,11 @@
 * Coding Challenge 4 - [My Solution](https://github.com/romeojeremiah/Complete_Javascript_Course_Schmedtmann/blob/master/codingChallenge4.js)
 * Coding Challenge 5 - [My Solution](https://github.com/romeojeremiah/Complete_Javascript_Course_Schmedtmann/blob/master/codingChallenge5.js)
 #### How JavaScript Works Behind the Scenes
-*How our code is executed
-*Host enviornment (Browser JS Engine/Node) takes our code and execute it.
-*Code is parsed by a Parser to check for correct syntax
-*If all is correct, code is converted to machine code
-*Code is then ran to do its work.
+* How our code is executed
+  1. Host enviornment (Browser JS Engine/Node) takes our code and execute it.
+  2. Code is parsed by a Parser to check for correct syntax
+  3. If all is correct, code is converted to machine code
+  4. Code is then ran to do its work.
 #### JavaScript in the Browser: DOM Manipulation and Events
 * Coding Challenge 6
 #### Advanced JavaScript: Objects and Functions
