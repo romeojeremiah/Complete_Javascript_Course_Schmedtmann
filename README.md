@@ -13,10 +13,10 @@
 * Coding Challenge 5 - [My Solution](https://github.com/romeojeremiah/Complete_Javascript_Course_Schmedtmann/blob/master/codingChallenge5.js)
 
 #### How JavaScript Works Behind the Scenes
-[Notes](https://github.com/romeojeremiah/Complete_Javascript_Course_Schmedtmann/blob/master/Section_4_How_Javascript_Works.md)
+[Section 3 Notes](https://github.com/romeojeremiah/Complete_Javascript_Course_Schmedtmann/blob/master/Section_3_How_Javascript_Works.md)
 
 #### JavaScript in the Browser: DOM Manipulation and Events
-[Notes](https://github.com/romeojeremiah/Complete_Javascript_Course_Schmedtmann/blob/master/Section_5_Javascript_In_The_Browser.md)
+[Section 4 Notes](https://github.com/romeojeremiah/Complete_Javascript_Course_Schmedtmann/blob/master/Section_4_Javascript_In_The_Browser.md)
 * Coding Challenge 6
 
 #### Advanced JavaScript: Objects and Functions
