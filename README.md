@@ -1,4 +1,4 @@
-# The Complete JavaScript Course 2018: Schmedtmann
+# The Complete JavaScript Course 2019: Schmedtmann
 
 ## Challenges and Projects from Schmedtmann's [The Complete JavaScript Course](https://www.udemy.com/the-complete-javascript-course/learn/v4/overview)
 
