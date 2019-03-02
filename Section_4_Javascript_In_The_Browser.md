@@ -49,9 +49,11 @@
   Types of events: [MDN event reference](https://developer.mozilla.org/en-US/docs/Web/Events)
 
   * What is a callback function
+  
   A function that is passed into another fuction as an argument
 
   * What is an anonymous function
+  
   A function that does not have a name
   ```
   function (name) {
