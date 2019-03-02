@@ -1,11 +1,10 @@
 # JavaScript in the Browswer: DOM Manipulation and Events
 
 * The DOM and DOM Manipulation
-  * The DOM is used to connect webpages to scripts like JavaScript
-  * For each HTML box, the is an object in the DOM we can access and interact with using JavaScript
-  * JavaScript and the DOM are two different things. JavaScript is one way to manipulate the Document Object Model
+
+  The DOM is used to connect webpages to scripts like JavaScript. For each HTML box, the is an object in the DOM we can access and    interact with using JavaScript. JavaScript and the DOM are two different things. JavaScript is one way to manipulate the Document Object Model
   
-* First DOM Access and Manipulation
+* DOM Access and Manipulation
   * How to create fundamental game variables
     
   * How to generate a random number
