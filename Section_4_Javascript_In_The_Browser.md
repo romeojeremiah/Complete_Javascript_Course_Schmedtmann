@@ -68,6 +68,11 @@ Events are notifications that are sent to notify when something happens in the b
   });
   ```
   * Another way to select elements by ID
+  ```
+  document.getElementyByID('element').textContent
+  //this selector does not require the # like query selector does. 
+  //It just requires the string name of the element
+  ```
   
   * How to change the image in an <img> element 
   2 different ways 
