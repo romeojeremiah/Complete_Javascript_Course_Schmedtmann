@@ -47,7 +47,8 @@
 ```javascript
 
 //The following does not work. It results in an error because before the function call
-//retirement variable is set to 'undefined' in the creation phase. Function expressions are not setup during creation phase.
+//retirement variable is set to 'undefined' in the creation phase. 
+//Function expressions are not setup during creation phase.
 //Therefore the parser will see an attempted function call on a value of 'undefined'.
 
 retirement(year);
