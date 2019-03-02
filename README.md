@@ -33,14 +33,41 @@
      1. In the Creation Phase:
         1. Creation of Variable Object
            1. **Argurment Object** is created
-           2. Code is scanned for function declarations -> pointing to the function
+           2. Code is scanned for **function declarations** -> pointing to the function
            3. Code is scanned for variable declarations -> **setting variables to undefined**
         2. Creation of scope chain
         3. Determine of 'this' variable
      2. In the Execution Phase:
         1. Code of function generated in the current execution context is ran line by line
- 
- 
+        
+* Hoisting in Practice
+
+**Notes:** Because of the creation phase, function calls can be used on functions that are declared after the call. However, this does not work the same for function expression because the variable will be set 'hoisted' and set to undefined. Therefore, you'll get a '[variable] is not a function error.
+
+```javascript
+//This works because the function declaration points to a function during the creation phase. Once the execution phase begins, calculateAge will be pointing to a function.
+
+calculateAge(1965);
+
+function calclateAge(year){
+ console.log(2016 - year)
+ }
+
+//This results in an error because retirement is set to 'undefined' in the creation phase. This is set before the function call, //therefore the parser will see an attempted function call on 'undefined'.
+
+retirement(year);
+
+var retirement = function calculateAge(year){
+ console.log(65 - (2016 -year));
+ }
+
+console.log(age) //age is not defined - Age hasn't been declared at this point therefore there will be an **uncaught reference** error
+var age;
+console.log(age) //age is undefined - Age was set to undefined in the creation phase so at this point this is age's value
+var age = 23;
+console.log(age) // 23
+```
+
 #### JavaScript in the Browser: DOM Manipulation and Events
 * Coding Challenge 6
 #### Advanced JavaScript: Objects and Functions
