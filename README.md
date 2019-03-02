@@ -79,9 +79,9 @@ console.log(age) // 23 // age assigned the value 23 in above line
 
 Big Picture: Scoping asnswers the question 'where can we access a certain variable?'
 
-* Each new function creates a scope
-* Lexical scoping is a fuction within another function
-* Scope chain goes up from locally scoped functions to the global scope, not in the reverse
+1. Each new function creates a scope
+2. Lexical scoping is a fuction within another function
+3. Scope chain goes up from locally scoped functions to the global scope, not in the reverse
 
 ```javascript
 var a = 'Hello!';
@@ -100,7 +100,7 @@ function first() {
 ```
 In above code, function second() has access to variables in function second(), function first(), and the global scope
 
-Execution Stack is different than Scope Chain
+4. Execution Stack is different than Scope Chain
 ```javascript
 var a = 'Hello!';
 first();
@@ -122,6 +122,56 @@ function third( {
 ```
 Above output will result in **uncaught reference** b is not defined because third() does not have access to the var b. 
 third() only has access to var a (in the global scope) and var d. var b is locally scoped to first(). 
+
+* The 'this' keyword/The 'this' keyword in practice
+
+1. In the creation phase, the 'this' variable is created and given to each execution context.
+2. In a **regular function** call, the 'this' variable points at the global object (the window object in the browswer).
+```javascript
+function calculateAge(year){
+    console.log(2016 - year);
+    console.log(this);
+}
+//output:
+//31
+// Window {postMessage: ƒ, blur: ƒ, focus: ƒ, close: ƒ, parent: Window, …}
+````
+3. In a **method call**, the 'this' variable points to the object that is calling the method.
+```javascript
+var john = {
+    name: 'John',
+    yearOfBirth: 1990,
+    calculateAge: function (){
+        console.log(this);
+    }
+}
+john.calculateAge()
+//output: {name: "John", yearOfBirth: 1990, calculateAge: ƒ}
+
+var john = {
+    name: 'John',
+    yearOfBirth: 1990,
+    calculateAge: function (){
+        console.log(this);
+        
+        function innerFunction(){
+         console.log(this);
+        }
+        innerFunction(); // 'this' points to the global window object
+    }
+}
+
+//The 'this' keyword in the innerFunction points to the gloabl window object even though
+//it's attached to the method. Remember the rule. This points to global when regular function
+//calls are made.
+```
+4. The 'this' keyword isn't assigned a value until a function where it is defined is called.
+```javascript
+ mike.calculateAge = john.calculateAge;
+ mike.calculateAge(); 
+ //mike.calculateAge borrows john.calculateAge, calls the method, which attaches 'this' to mike
+```
+
 
 #### JavaScript in the Browser: DOM Manipulation and Events
 * Coding Challenge 6
