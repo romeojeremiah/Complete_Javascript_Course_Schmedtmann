@@ -45,23 +45,23 @@
 **Notes:** Because of the creation phase, function calls can be used on functions that are declared after the call. However, this does not work the same for function expression because the variable will be set 'hoisted' and set to undefined. Therefore, you'll get a '[variable] is not a function error.
 
 ```javascript
-//This works because the function declaration points to a function during the creation phase. 
+
+//The following does not work. It results in an error because before the function call
+//retirement variable is set to 'undefined' in the creation phase. Function expressions are not setup during creation phase.
+//Therefore the parser will see an attempted function call on a value of 'undefined'.
+
+retirement(year);
+var retirement = function calculateAge(year){
+ console.log(65 - (2016 -year));
+ }
+ 
+//The following works because function declarations points to a function during the creation phase. 
 //Once the execution phase begins, calculateAge will be pointing to a function.
 
 calculateAge(1965);
 
 function calclateAge(year){
  console.log(2016 - year)
- }
-
-//This results in an error because retirement is set to 'undefined' in the creation phase. 
-//This is set before the function call, 
-//therefore the parser will see an attempted function call on 'undefined'.
-
-retirement(year);
-
-var retirement = function calculateAge(year){
- console.log(65 - (2016 -year));
  }
 
 console.log(age) //**uncaught reference** error - age is not defined // age hasn't been declared at this point 
