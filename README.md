@@ -17,7 +17,9 @@
 
 #### JavaScript in the Browser: DOM Manipulation and Events
 [Section 4 Notes](https://github.com/romeojeremiah/Complete_Javascript_Course_Schmedtmann/blob/master/Section_4_Javascript_In_The_Browser.md)
-* Coding Challenge 6
+
+[Pig Game](https://romeojeremiah.github.io/PigGame/)
+* Coding Challenge(s) 6
 
 #### Advanced JavaScript: Objects and Functions
 * Coding Challenge 7
