@@ -54,8 +54,10 @@
   
 * The Prototype Chain in the Console
 
-  **__proto__** is the properties inherited from the object's prototype
+  The prototype chain is easily visible in the browser's console. 
   ```
+  __proto__ is the properties inherited from the object's prototype
+  
   //from above
   john
   Person {name: 'John', yearOfBirth: 1990, job: 'teacher}
@@ -63,3 +65,6 @@
       calculateAge: function()
       lastName: "Smith"
  ```
+ 
+ * Creating Objects: Object.create
+ 
