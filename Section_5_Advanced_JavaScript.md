@@ -59,11 +59,15 @@
   ```javascript
   __proto__ is the properties inherited from the object's prototype
   
-  //from above
-  john
+  //john from above
+  
   Person {name: 'John', yearOfBirth: 1990, job: 'teacher}
   __proto__
       calculateAge: function()
       lastName: "Smith"
  ```
-* Test
+ 
+* Creating Objects: Object: create
+  
+  Object.create is another way to create objects.
+  
