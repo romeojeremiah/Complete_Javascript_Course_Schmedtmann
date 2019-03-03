@@ -55,7 +55,8 @@
 * The Prototype Chain in the Console
 
   The prototype chain is easily visible in the browser's console. 
-  ```
+  
+  ```javascript
   __proto__ is the properties inherited from the object's prototype
   
   //from above
@@ -65,6 +66,4 @@
       calculateAge: function()
       lastName: "Smith"
  ```
- 
- * Creating Objects: Object.create
- 
+* Test
