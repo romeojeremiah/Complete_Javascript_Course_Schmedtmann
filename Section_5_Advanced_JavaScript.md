@@ -55,19 +55,25 @@
 * The Prototype Chain in the Console
 
   The prototype chain is easily visible in the browser's console. 
-  
-  ```javascript
-  __proto__ is the properties inherited from the object's prototype
-  
-  //john from above
-  
-  Person {name: 'John', yearOfBirth: 1990, job: 'teacher}
-  __proto__
-      calculateAge: function()
-      lastName: "Smith"
- ```
+
+* Creating Objects: Object.create
+
+ Object.create is another way to create objects. The Object.create method allows you to create an object that is based on a prototype     that is created. 
+ ```javascript
+ var personProto = {
+    calculateAge : function(){
+        console.log(2016 - this.yearOfBirth)
+    }
+ }
+
+ var john = Object.create(personProto)
+
+ john
+ {}
+ __proto__:
+ calculateAge: ƒ ()
+ __proto__: Object
  
-* Creating Objects: Object: create
-  
-  Object.create is another way to create objects.
-  
+ ```
+
+
