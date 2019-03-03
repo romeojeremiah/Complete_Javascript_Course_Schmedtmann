@@ -80,4 +80,48 @@
 
   document.querySelector('.element').setAttribute('src', '/dice.png');
   ```
+* Updating Scores and Changing the Active Player
+  
+  * What is the ternary operator
+    
+  Ternary operator is a short-hand version of one if-else statement
+  (Condition to Test) ? if TRUE = {run this code} : if FALSE = {run this code
+  ```javascript
+  activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
+    ```
+  * How to add, remove and toggle HTML classes
+  ```
+  //remove a class by using the classList method
+  document.querySelector('.player-0-panel').classList.remove('active');
+  //add a class by using the classList method, then add method
+  document.querySelector('.player-0-panel').classList.add('active');
+  //toggle a class by using the classList method, then toggle method
+  document.querySelector('.player-0-panel').classList.remove('toggle');
+  ```
+* Implementing 'Hold' Function and the DRY Principle
+
+  * How to use function to apply DRY
+   
+  Use functions as often as possible to prevent repeating code. DRY equal 'Dont Repeat Yourself'.
+  
+  * How to think like a programmer
+
+* Creating a Game Initializing Function
+
+  This section implemented the init function and continued with the DRY principle
+
+* Finishing Touches: State Variables
+  
+  A state variable tells us the condition of a system. 
+  In the code example, we want to keep track whether the game is being played or not.
+  ```javascript
+  var gamePlaying = true;
+  
+  if (gamePlaying){
+    //do something
+  }
+  ```
+  
+ 
+  
   
