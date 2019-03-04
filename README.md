@@ -22,6 +22,8 @@
 * Coding Challenge(s) 6
 
 #### Advanced JavaScript: Objects and Functions
+[Section 5 Notes](https://github.com/romeojeremiah/Complete_Javascript_Course_Schmedtmann/blob/master/Section_5_Advanced_JavaScript.md)
+
 * Coding Challenge 7
 #### Putting it all Together: The Budget App Project
 * The Budget App Project
